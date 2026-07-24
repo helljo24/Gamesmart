@@ -1304,3 +1304,134 @@ a {
 }
 
 
+
+/* ==========================================
+   GAMESMART FINAL CLEAN SIZE OVERRIDES
+   This must stay at the VERY END of CSS
+========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px !important;
+}
+
+/* Header */
+.logo h2 {
+    font-size: 24px !important;
+}
+
+.logo p {
+    font-size: 12px !important;
+}
+
+.nav-links a {
+    font-size: 14px !important;
+}
+
+.nav-btn {
+    padding: 10px 22px !important;
+    font-size: 14px !important;
+}
+
+/* Hero */
+.hero-left h1 {
+    font-size: 40px !important;
+    line-height: 1.15 !important;
+}
+
+.hero-left p {
+    font-size: 15px !important;
+}
+
+/* Section headings */
+.section-title h2,
+.services-preview h2,
+.bundles h2 {
+    font-size: 32px !important;
+}
+
+.section-title span {
+    font-size: 13px !important;
+}
+
+/* Cards */
+.service-card,
+.bundle-card {
+    padding: 28px !important;
+}
+
+.service-icon {
+    font-size: 32px !important;
+}
+
+.service-card h3,
+.bundle-card h3 {
+    font-size: 20px !important;
+}
+
+.service-card p,
+.bundle-card p {
+    font-size: 14px !important;
+}
+
+.service-card ul li,
+.bundle-card ul li {
+    font-size: 13px !important;
+}
+
+/* Prices */
+.price,
+.service-card .price,
+.bundle-card .price {
+    font-size: 26px !important;
+    margin: 15px 0 !important;
+}
+
+/* Buttons */
+.primary-btn,
+.secondary-btn,
+.service-btn {
+    padding: 11px 22px !important;
+    font-size: 14px !important;
+    min-height: auto !important;
+}
+
+.service-btn {
+    display: block !important;
+    width: 100% !important;
+}
+
+/* Footer */
+.footer-column h2 {
+    font-size: 24px !important;
+}
+
+.footer-column h3 {
+    font-size: 18px !important;
+}
+
+.footer-column p {
+    font-size: 14px !important;
+}
+
+
+/* Mobile */
+@media(max-width:768px){
+
+.hero-left h1 {
+    font-size:32px !important;
+}
+
+.section-title h2 {
+    font-size:26px !important;
+}
+
+.service-card h3,
+.bundle-card h3 {
+    font-size:18px !important;
+}
+
+}
