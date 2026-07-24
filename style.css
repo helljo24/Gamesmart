@@ -211,19 +211,21 @@ header{
 
 .primary-btn{
 
-    background:var(--primary);
+background:var(--primary);
 
-    color:white;
+color:white;
 
-    text-decoration:none;
+text-decoration:none;
 
-    padding:16px 34px;
+padding:12px 28px;
 
-    border-radius:50px;
+border-radius:50px;
 
-    font-weight:600;
+font-size:16px;
 
-    transition:.3s;
+font-weight:600;
+
+transition:.3s;
 
 }
 
@@ -677,21 +679,38 @@ margin:20px 0;
 }
 
 .service-btn{
+
 display:block;
+
 margin-top:20px;
+
 text-align:center;
+
 background:#2563eb;
+
 color:white;
-padding:15px;
+
+padding:12px 20px;
+
 border-radius:12px;
+
 text-decoration:none;
+
+font-size:16px;
+
 font-weight:600;
+
 transition:.3s;
+
 }
 
+
 .service-btn:hover{
+
 background:#1d4ed8;
+
 transform:translateY(-3px);
+
 }
 
 .bundles{
@@ -833,10 +852,12 @@ transform:none;
 }
 
 .price{
-    font-size:38px;
+
+    font-size:32px;
     font-weight:700;
     color:#2563eb;
-    margin:20px 0;
+    margin:25px 0;
+
 }
 
 .how-it-works,
