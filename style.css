@@ -1436,3 +1436,54 @@ body {
 }
 
 }
+
+
+/* ==========================
+   Phase 1-4 Improvements
+========================== */
+
+.duration{
+    font-size:13px;
+    color:#64748b;
+    margin:15px 0;
+    font-weight:500;
+}
+
+.service-area{
+    padding:80px 30px;
+    background:#f8fafc;
+    text-align:center;
+}
+
+.service-area h2{
+    color:#08142B;
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.service-area p{
+    color:#475569;
+    margin-bottom:35px;
+}
+
+.area-grid{
+    max-width:900px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.area-grid div{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+    font-weight:600;
+}
+
+@media(max-width:900px){
+    .area-grid{
+        grid-template-columns:1fr;
+    }
+}
