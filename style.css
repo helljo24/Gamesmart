@@ -1487,3 +1487,67 @@ body {
         grid-template-columns:1fr;
     }
 }
+
+
+/* =====================================
+   Service Area / Pretoria Section Fix
+===================================== */
+
+.service-area{
+    padding:90px 30px;
+    background:#f8fafc;
+}
+
+.service-area .section-title{
+    max-width:800px;
+    margin:0 auto 45px;
+}
+
+.area-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.area-card{
+    background:white;
+    padding:30px 20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.area-card:hover{
+    transform:translateY(-8px);
+}
+
+.area-icon{
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.area-card h3{
+    color:#08142B;
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.area-card p{
+    color:#475569;
+    font-size:14px;
+}
+
+@media(max-width:900px){
+    .area-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:600px){
+    .area-grid{
+        grid-template-columns:1fr;
+    }
+}
