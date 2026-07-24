@@ -129,7 +129,7 @@ header{
 
     text-decoration:none;
 
-    padding:12px 28px;
+    padding:12px 24px;
 
     border-radius:40px;
 
@@ -211,19 +211,21 @@ header{
 
 .primary-btn{
 
-    background:var(--primary);
+background:var(--primary);
 
-    color:white;
+color:white;
 
-    text-decoration:none;
+text-decoration:none;
 
-    padding:16px 34px;
+padding:12px 24px;
 
-    border-radius:50px;
+border-radius:50px;
 
-    font-weight:600;
+font-size:16px;
 
-    transition:.3s;
+font-weight:600;
+
+transition:.3s;
 
 }
 
@@ -677,21 +679,38 @@ margin:20px 0;
 }
 
 .service-btn{
+
 display:block;
+
 margin-top:20px;
+
 text-align:center;
+
 background:#2563eb;
+
 color:white;
-padding:15px;
+
+padding:10px 18px;
+
 border-radius:12px;
+
 text-decoration:none;
+
+font-size:16px;
+
 font-weight:600;
+
 transition:.3s;
+
 }
 
+
 .service-btn:hover{
+
 background:#1d4ed8;
+
 transform:translateY(-3px);
+
 }
 
 .bundles{
@@ -833,10 +852,12 @@ transform:none;
 }
 
 .price{
-    font-size:38px;
+
+    font-size:24px;
     font-weight:700;
     color:#2563eb;
-    margin:20px 0;
+    margin:25px 0;
+
 }
 
 .how-it-works,
@@ -891,3 +912,316 @@ transform:none;
         flex-wrap:wrap;
     }
 }
+/* ===============================
+   FINAL GAME SMART DESKTOP FIX
+=============================== */
+
+body{
+    font-size:16px;
+}
+
+/* Main sections width */
+
+.hero,
+.about-container,
+.services,
+.how-it-works,
+.why,
+.faq,
+.booking,
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* Hero */
+
+.hero-left h1{
+    font-size:42px;
+}
+
+.hero-left p{
+    font-size:16px;
+}
+
+
+/* Section titles */
+
+.section-title h2{
+    font-size:32px;
+}
+
+.section-title p{
+    font-size:16px;
+}
+
+
+/* SERVICES */
+
+.service-grid{
+
+    max-width:1200px;
+    margin:auto;
+
+    grid-template-columns:repeat(3, minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+
+.service-card{
+
+    padding:30px;
+
+    min-height:480px;
+
+}
+
+
+.service-card h3{
+
+    font-size:22px;
+
+}
+
+
+.service-card p{
+
+    font-size:15px;
+
+}
+
+
+.service-card li{
+
+    font-size:14px;
+
+}
+
+
+/* PRICE */
+
+.price{
+
+    font-size:24px;
+
+}
+
+
+
+/* BUNDLES */
+
+.bundle-grid{
+
+    grid-template-columns:repeat(3,minmax(280px,1fr));
+
+}
+
+
+.bundle-card h3{
+
+    font-size:20px;
+
+}
+
+
+.bundle-card li{
+
+    font-size:15px;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.service-grid,
+.bundle-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.hero-left h1{
+
+font-size:32px;
+
+}
+
+
+/* ===============================
+   FINAL SIZE BALANCE FIX
+   =============================== */
+
+.service-card{
+    font-size:16px;
+}
+
+.service-card h3{
+    font-size:20px;
+}
+
+.service-card p{
+    font-size:15px;
+}
+
+.service-card li{
+    font-size:14px;
+}
+
+.service-btn{
+    padding:12px 18px;
+    font-size:14px;
+    width:auto;
+}
+
+.price{
+    font-size:26px;
+    margin:18px 0;
+}
+
+.primary-btn{
+    padding:12px 24px;
+    font-size:15px;
+}
+
+.bundle-card{
+    padding:32px;
+}
+
+.bundle-card .price{
+    font-size:28px;
+}
+
+
+
+/* ===============================
+   FINAL GAME SMART SIZE CONTROL
+   =============================== */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 15px;
+}
+
+/* Navigation */
+.navbar {
+    padding: 15px 30px;
+}
+
+.logo h2 {
+    font-size: 26px;
+}
+
+.logo p {
+    font-size: 12px;
+}
+
+.nav-links {
+    gap: 28px;
+}
+
+.nav-links a {
+    font-size: 14px;
+}
+
+.nav-btn {
+    padding: 10px 22px;
+    font-size: 14px;
+}
+
+/* Hero */
+.hero-left h1 {
+    font-size: 38px;
+}
+
+.hero-left p {
+    font-size: 15px;
+}
+
+/* Section headings */
+.section-title h2,
+.services-preview h2,
+.bundles h2 {
+    font-size: 30px;
+}
+
+.section-title p {
+    font-size: 14px;
+}
+
+/* Service cards */
+.service-card {
+    padding: 28px;
+    min-height: 450px;
+}
+
+.service-icon {
+    font-size: 34px;
+}
+
+.service-card h3 {
+    font-size: 18px;
+}
+
+.service-card p {
+    font-size: 14px;
+}
+
+.service-card li {
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+/* Prices */
+.price {
+    font-size: 24px !important;
+    margin: 15px 0;
+}
+
+/* Buttons */
+.primary-btn,
+.secondary-btn,
+.service-btn {
+    padding: 10px 20px;
+    font-size: 14px !important;
+    border-radius: 30px;
+}
+
+.service-btn {
+    margin-top: 15px;
+}
+
+/* Bundles */
+.bundle-card {
+    padding: 30px;
+}
+
+.bundle-card h3 {
+    font-size: 19px;
+}
+
+.bundle-card li {
+    font-size: 14px;
+}
+
+/* Mobile */
+@media(max-width:900px){
+
+.hero-left h1 {
+    font-size: 32px;
+}
+
+.section-title h2 {
+    font-size: 26px;
+}
+
+}
+
