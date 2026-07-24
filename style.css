@@ -1225,3 +1225,82 @@ body {
 
 }
 
+
+
+/* =====================================
+   HARD RESET - FINAL SIZE FIX
+   ===================================== */
+
+body,
+p,
+li,
+a {
+    font-size: 14px !important;
+}
+
+.logo h2 {
+    font-size: 24px !important;
+}
+
+.logo p {
+    font-size: 11px !important;
+}
+
+.nav-links a,
+.nav-btn {
+    font-size: 13px !important;
+}
+
+.hero-left h1 {
+    font-size: 36px !important;
+    line-height: 1.15;
+}
+
+.hero-left p {
+    font-size: 14px !important;
+}
+
+.section-title h2,
+.services-preview h2,
+.bundles h2 {
+    font-size: 28px !important;
+}
+
+.service-card {
+    padding: 25px !important;
+}
+
+.service-icon {
+    font-size: 30px !important;
+}
+
+.service-card h3,
+.bundle-card h3 {
+    font-size: 18px !important;
+}
+
+.service-card p,
+.bundle-card p {
+    font-size: 13px !important;
+}
+
+.service-card li,
+.bundle-card li {
+    font-size: 12px !important;
+}
+
+.price,
+.service-card .price,
+.bundle-card .price {
+    font-size: 22px !important;
+    margin: 12px 0 !important;
+}
+
+.service-btn,
+.primary-btn,
+.secondary-btn {
+    font-size: 13px !important;
+    padding: 9px 18px !important;
+}
+
+
