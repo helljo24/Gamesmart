@@ -1,8 +1,18 @@
-/* ===========================
-   GameSmart Website
-   Style.css
-   Part 1
-=========================== */
+
+/* ==========================================
+   GameSmart Clean Style.css
+   Rebuilt version
+========================================== */
+
+:root{
+    --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+    --dark:#08142B;
+    --light:#f8fafc;
+    --text:#475569;
+    --white:#ffffff;
+    --shadow:0 12px 35px rgba(0,0,0,.08);
+}
 
 *{
     margin:0;
@@ -16,1519 +26,324 @@ html{
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#ffffff;
     color:#1e293b;
+    background:white;
     line-height:1.6;
 }
 
-/* ===========================
-   Variables
-=========================== */
-
-:root{
-
-    --primary:#2563eb;
-    --primary-dark:#1d4ed8;
-
-    --dark:#08142B;
-
-    --light:#f8fafc;
-
-    --white:#ffffff;
-
-    --text:#475569;
-
-    --radius:18px;
-
-    --shadow:0 12px 35px rgba(0,0,0,.08);
-
+img{
+    max-width:100%;
 }
 
-/* ===========================
-   Navbar
-=========================== */
-
 header{
-
-    width:100%;
     background:var(--dark);
-
     position:sticky;
     top:0;
-    z-index:999;
-
+    z-index:1000;
 }
 
 .navbar{
-
     max-width:1200px;
-
     margin:auto;
-
+    padding:15px 30px;
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
-    padding:18px 30px;
-
+    gap:20px;
 }
 
 .logo h2{
-
     color:white;
-
-    font-size:30px;
-
-    font-weight:700;
-
+    font-size:26px;
 }
 
 .logo p{
-
     color:#cbd5e1;
-
-    font-size:13px;
-
+    font-size:12px;
 }
 
 .nav-links{
-
     display:flex;
-
     list-style:none;
-
-    gap:35px;
-
+    gap:28px;
 }
 
 .nav-links a{
-
     color:white;
-
     text-decoration:none;
-
-    transition:.3s;
-
-    font-weight:500;
-
-}
-
-.nav-links a:hover{
-
-    color:#60a5fa;
-
-}
-
-.nav-btn{
-
-    background:var(--primary);
-
-    color:white;
-
-    text-decoration:none;
-
-    padding:12px 24px;
-
-    border-radius:40px;
-
-    transition:.3s;
-
-    font-weight:600;
-
-}
-
-.nav-btn:hover{
-
-    background:var(--primary-dark);
-
-    transform:translateY(-2px);
-
-}
-
-/* ===========================
-   Hero
-=========================== */
-
-.hero{
-
-    max-width:1200px;
-
-    margin:auto;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    gap:70px;
-
-    padding:70px 30px;
-
-}
-
-.hero-left{
-
-    flex:1;
-
-}
-
-.hero-left h1{
-
-    font-size:40px;
-
-    color:var(--dark);
-
-    line-height:1.1;
-
-    margin-bottom:25px;
-
-}
-
-.hero-left p{
-
-    font-size:18px;
-
-    color:var(--text);
-
-    margin-bottom:35px;
-
-    max-width:600px;
-
-}
-
-.hero-buttons{
-
-    display:flex;
-
-    gap:20px;
-
-    flex-wrap:wrap;
-
-}
-
-.primary-btn{
-
-background:var(--primary);
-
-color:white;
-
-text-decoration:none;
-
-padding:12px 24px;
-
-border-radius:50px;
-
-font-size:16px;
-
-font-weight:600;
-
-transition:.3s;
-
-}
-
-.primary-btn:hover{
-
-    background:var(--primary-dark);
-
-    transform:translateY(-3px);
-
-}
-
-.secondary-btn{
-
-    background:white;
-
-    color:var(--primary);
-
-    border:2px solid var(--primary);
-
-    text-decoration:none;
-
-    padding:16px 34px;
-
-    border-radius:50px;
-
-    transition:.3s;
-
-    font-weight:600;
-
-}
-
-.secondary-btn:hover{
-
-    background:var(--primary);
-
-    color:white;
-
-}
-
-.hero-right{
-
-    flex:1;
-
-    display:flex;
-
-    justify-content:center;
-
-}
-
-.hero-right img{
-
-    width:100%;
-
-    max-width:520px;
-
-    border-radius:25px;
-
-    box-shadow:var(--shadow);
-
-    object-fit:cover;
-
-}
-/* ===========================
-   Services Section
-=========================== */
-
-.services-preview{
-    padding:100px 30px;
-    background:#f8fafc;
-}
-
-.services-preview h2{
-    text-align:center;
-    font-size:36px;
-    color:var(--dark);
-    margin-bottom:60px;
-}
-
-.service-grid{
-    max-width:1200px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
-}
-
-.service-card{
-    background:white;
-    padding:35px 25px;
-    border-radius:20px;
-    text-align:center;
-    font-size:42px;
-    transition:.35s;
-    cursor:pointer;
-    box-shadow:0 8px 25px rgba(0,0,0,.06);
-}
-
-.service-card h3{
-    margin-top:20px;
-    font-size:22px;
-    color:var(--dark);
-}
-
-.service-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 20px 40px rgba(37,99,235,.18);
-}
-
-/* ===========================
-   CTA Section
-=========================== */
-
-.cta{
-    background:linear-gradient(135deg,#2563eb,#1d4ed8);
-    color:white;
-    text-align:center;
-    padding:100px 30px;
-}
-
-.cta h2{
-    font-size:38px;
-    margin-bottom:15px;
-}
-
-.cta p{
-    font-size:20px;
-    margin-bottom:40px;
-    opacity:.95;
-}
-
-.cta .primary-btn{
-    background:white;
-    color:var(--primary);
-}
-
-.cta .primary-btn:hover{
-    background:#f1f5f9;
-}
-
-/* ===========================
-   Footer
-=========================== */
-
-footer{
-    background:var(--dark);
-    color:white;
-    text-align:center;
-    padding:70px 20px;
-}
-
-footer h2{
-    font-size:34px;
-    margin-bottom:10px;
-}
-
-footer p{
-    margin:12px 0;
-    color:#cbd5e1;
-}
-
-/* ===========================
-   Simple Animations
-=========================== */
-
-.hero-left,
-.hero-right,
-.service-card,
-.cta{
-    animation:fadeUp .8s ease;
-}
-
-@keyframes fadeUp{
-
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-
-}
-
-/* ===========================
-   Responsive
-=========================== */
-
-@media(max-width:1024px){
-
-.hero{
-
-    flex-direction:column;
-    text-align:center;
-    padding:70px 25px;
-
-}
-
-.hero-left h1{
-
-    font-size:48px;
-
-}
-
-.hero-left p{
-
-    margin:auto;
-    margin-bottom:35px;
-
-}
-
-.hero-buttons{
-
-    justify-content:center;
-
-}
-
-.service-grid{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-}
-
-@media(max-width:768px){
-
-.navbar{
-
-    flex-direction:column;
-    gap:20px;
-
-}
-
-.nav-links{
-
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-
-}
-
-.hero{
-
-    padding:60px 20px;
-
-}
-
-.hero-left h1{
-
-    font-size:38px;
-
-}
-
-.hero-left p{
-
-    font-size:17px;
-
-}
-
-.hero-right img{
-
-    max-width:100%;
-
-}
-
-.services-preview{
-
-    padding:70px 20px;
-
-}
-
-.services-preview h2{
-
-    font-size:34px;
-
-}
-
-.service-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.service-card{
-
-    padding:40px 25px;
-
-}
-
-.cta{
-
-    padding:70px 20px;
-
-}
-
-.cta h2{
-
-    font-size:34px;
-
-}
-
-}
-
-@media(max-width:480px){
-
-.hero-left h1{
-
-    font-size:32px;
-
-}
-
-.logo h2{
-
-    font-size:26px;
-
-}
-
-.logo p{
-
-    font-size:12px;
-
+    font-size:14px;
 }
 
 .nav-btn,
 .primary-btn,
-.secondary-btn{
-
-    width:100%;
-    text-align:center;
-
-}
-
-.hero-buttons{
-
-    flex-direction:column;
-
-}
-
-}
-/* Bundles */
-
-.bundles{
-
-padding:100px 30px;
-
-background:white;
-
-}
-
-.bundles h2{
-
-text-align:center;
-
-font-size:36px;
-
-margin-bottom:60px;
-
-color:var(--dark);
-
-}
-
-.bundle-grid{
-
-max-width:1200px;
-
-margin:auto;
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:30px;
-
-}
-
-.bundle-card{
-
-background:#f8fafc;
-
-padding:40px;
-
-border-radius:20px;
-
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-transition:.3s;
-
-}
-
-.bundle-card:hover{
-
-transform:translateY(-10px);
-
-}
-
-.bundle-card h3{
-
-font-size:26px;
-
-margin-bottom:15px;
-
-}
-
-.bundle-card h4{
-
-font-size:38px;
-
-color:#2563eb;
-
-margin-bottom:25px;
-
-}
-
-.bundle-card ul{
-
-list-style:none;
-
-}
-
-.bundle-card li{
-
-margin:12px 0;
-
-}
-
-@media(max-width:900px){
-
-.bundle-grid{
-
-grid-template-columns:1fr;
-
-}
-
-}
-.service-card ul{
-margin:25px 0;
-padding-left:20px;
-text-align:left;
-}
-
-.service-card li{
-margin:10px 0;
-}
-
-.service-card h4{
-font-size:38px;
-color:#2563eb;
-margin:20px 0;
-}
-
+.secondary-btn,
 .service-btn{
-
-display:block;
-
-margin-top:20px;
-
-text-align:center;
-
-background:#2563eb;
-
-color:white;
-
-padding:10px 18px;
-
-border-radius:12px;
-
-text-decoration:none;
-
-font-size:16px;
-
-font-weight:600;
-
-transition:.3s;
-
+    display:inline-block;
+    text-decoration:none;
+    border-radius:40px;
+    padding:11px 22px;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
 }
 
+.nav-btn,
+.primary-btn,
+.service-btn{
+    background:var(--primary);
+    color:white;
+}
 
+.secondary-btn{
+    border:2px solid var(--primary);
+    color:var(--primary);
+}
+
+.primary-btn:hover,
+.nav-btn:hover,
 .service-btn:hover{
-
-background:#1d4ed8;
-
-transform:translateY(-3px);
-
+    background:var(--primary-dark);
 }
 
-.bundles{
-padding:110px 30px;
-background:#08142B;
-color:white;
+.hero{
+    max-width:1200px;
+    margin:auto;
+    padding:70px 30px;
+    display:flex;
+    align-items:center;
+    gap:60px;
 }
 
-.bundles h2{
-text-align:center;
-font-size:38px;
-margin-bottom:60px;
+.hero-left,
+.hero-right{
+    flex:1;
 }
-
-.bundle-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:35px;
-max-width:1200px;
-margin:auto;
-}
-
-.bundle-card{
-background:white;
-color:#08142B;
-padding:40px;
-border-radius:20px;
-position:relative;
-box-shadow:0 15px 40px rgba(0,0,0,.2);
-}
-
-.bundle-card:hover{
-transform:translateY(-8px);
-transition:.3s;
-}
-
-.featured{
-transform:scale(1.05);
-border:4px solid #2563eb;
-}
-
-.popular{
-position:absolute;
-top:-15px;
-left:50%;
-transform:translateX(-50%);
-background:#2563eb;
-color:white;
-padding:8px 20px;
-border-radius:50px;
-font-size:13px;
-font-weight:700;
-}
-
-.price{
-font-size:32px;
-font-weight:700;
-color:#2563eb;
-margin:20px 0;
-}
-
-.bundle-card ul{
-padding-left:20px;
-margin:25px 0;
-}
-
-.bundle-card li{
-margin:10px 0;
-}
-
-@media(max-width:900px){
-
-.bundle-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.featured{
-
-transform:none;
-
-}
-
-}
-
-
-/* ===========================
-   Final GameSmart Fixes
-=========================== */
 
 .badge{
     display:inline-block;
     background:#eff6ff;
-    color:#2563eb;
+    color:var(--primary);
     padding:8px 18px;
     border-radius:30px;
-    font-weight:600;
+    font-size:13px;
     margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:40px;
+    line-height:1.15;
+    color:var(--dark);
+}
+
+.hero p{
+    margin:25px 0;
+    color:var(--text);
+    font-size:15px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
 }
 
 .hero-stats{
     display:flex;
-    gap:30px;
+    gap:35px;
     margin-top:35px;
 }
 
 .hero-stats h3{
-    color:#08142B;
-    font-size:24px;
+    color:var(--dark);
 }
 
-.hero-stats p{
-    font-size:14px;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:50px;
-}
-
-.section-title span{
-    color:#2563eb;
-    font-weight:700;
-    font-size:14px;
-}
-
-.section-title h2{
-    font-size:38px;
-    color:#08142B;
-}
-
-.section-title p{
-    color:#475569;
-}
-
-.service-icon{
-    font-size:42px;
-}
-
-.price{
-
-    font-size:24px;
-    font-weight:700;
-    color:#2563eb;
-    margin:25px 0;
-
-}
-
+.about,
+.services,
+.service-area,
 .how-it-works,
 .why,
 .faq,
 .booking{
-    padding:90px 30px;
+    padding:80px 30px;
 }
 
-.steps,
-.why-grid{
-    max-width:1200px;
+.about-container,
+.section-title{
+    max-width:800px;
     margin:auto;
+    text-align:center;
+}
+
+.section-title span{
+    color:var(--primary);
+    font-size:13px;
+    font-weight:700;
+}
+
+.section-title h2{
+    color:var(--dark);
+    font-size:32px;
+    margin:10px 0;
+}
+
+.section-title p{
+    color:var(--text);
+}
+
+.about-grid,
+.service-grid,
+.bundle-grid,
+.steps,
+.why-grid,
+.area-grid{
+    max-width:1200px;
+    margin:50px auto 0;
     display:grid;
-    grid-template-columns:repeat(4,1fr);
     gap:25px;
 }
 
+.about-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.service-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.service-card,
+.bundle-card,
 .step,
 .why-card,
-.faq-item{
+.faq-item,
+.area-card{
     background:white;
+    border-radius:20px;
     padding:30px;
-    border-radius:18px;
     box-shadow:var(--shadow);
+}
+
+.service-card{
+    min-height:450px;
+    text-align:center;
+}
+
+.service-icon,
+.area-icon{
+    font-size:35px;
+}
+
+.service-card h3,
+.bundle-card h3,
+.area-card h3{
+    color:var(--dark);
+    font-size:20px;
+    margin:15px 0;
+}
+
+.service-card p,
+.bundle-card p,
+.area-card p{
+    color:var(--text);
+    font-size:14px;
+}
+
+.service-card ul,
+.bundle-card ul{
+    text-align:left;
+    margin:20px 0;
+    padding-left:20px;
+}
+
+.price{
+    color:var(--primary);
+    font-size:26px;
+    font-weight:700;
+    margin:15px 0;
+}
+
+.bundles{
+    background:var(--dark);
+    padding:80px 30px;
+}
+
+.bundle-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.bundle-card{
+    position:relative;
+}
+
+.featured{
+    border:3px solid var(--primary);
+}
+
+.popular{
+    position:absolute;
+    top:-15px;
+    left:50%;
+    transform:translateX(-50%);
+    background:var(--primary);
+    color:white;
+    padding:7px 20px;
+    border-radius:30px;
+    font-size:12px;
+}
+
+.area-grid{
+    grid-template-columns:repeat(4,1fr);
+}
+
+.area-card{
+    text-align:center;
+    min-height:220px;
+}
+
+.booking{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:white;
+    text-align:center;
+}
+
+.footer{
+    background:var(--dark);
+    color:white;
+    padding:60px 30px;
 }
 
 .floating-whatsapp{
     position:fixed;
     right:25px;
     bottom:25px;
+    width:55px;
+    height:55px;
+    border-radius:50%;
     background:#25D366;
     color:white;
-    width:60px;
-    height:60px;
-    border-radius:50%;
     display:flex;
     align-items:center;
     justify-content:center;
     text-decoration:none;
-    font-size:28px;
-}
-
-@media(max-width:900px){
-    .steps,
-    .why-grid{
-        grid-template-columns:1fr;
-    }
-
-    .hero-stats{
-        justify-content:center;
-        flex-wrap:wrap;
-    }
-}
-/* ===============================
-   FINAL GAME SMART DESKTOP FIX
-=============================== */
-
-body{
-    font-size:16px;
-}
-
-/* Main sections width */
-
-.hero,
-.about-container,
-.services,
-.how-it-works,
-.why,
-.faq,
-.booking,
-.footer-container{
-    max-width:1200px;
-    margin:auto;
-}
-
-
-/* Hero */
-
-.hero-left h1{
-    font-size:42px;
-}
-
-.hero-left p{
-    font-size:16px;
-}
-
-
-/* Section titles */
-
-.section-title h2{
-    font-size:32px;
-}
-
-.section-title p{
-    font-size:16px;
-}
-
-
-/* SERVICES */
-
-.service-grid{
-
-    max-width:1200px;
-    margin:auto;
-
-    grid-template-columns:repeat(3, minmax(280px,1fr));
-
-    gap:30px;
-
-}
-
-
-.service-card{
-
-    padding:30px;
-
-    min-height:480px;
-
-}
-
-
-.service-card h3{
-
-    font-size:22px;
-
-}
-
-
-.service-card p{
-
-    font-size:15px;
-
-}
-
-
-.service-card li{
-
-    font-size:14px;
-
-}
-
-
-/* PRICE */
-
-.price{
-
-    font-size:24px;
-
-}
-
-
-
-/* BUNDLES */
-
-.bundle-grid{
-
-    grid-template-columns:repeat(3,minmax(280px,1fr));
-
-}
-
-
-.bundle-card h3{
-
-    font-size:20px;
-
-}
-
-
-.bundle-card li{
-
-    font-size:15px;
-
-}
-
-
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-.service-grid,
-.bundle-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.hero-left h1{
-
-font-size:32px;
-
-}
-
-
-/* ===============================
-   FINAL SIZE BALANCE FIX
-   =============================== */
-
-.service-card{
-    font-size:16px;
-}
-
-.service-card h3{
-    font-size:20px;
-}
-
-.service-card p{
-    font-size:15px;
-}
-
-.service-card li{
-    font-size:14px;
-}
-
-.service-btn{
-    padding:12px 18px;
-    font-size:14px;
-    width:auto;
-}
-
-.price{
-    font-size:26px;
-    margin:18px 0;
-}
-
-.primary-btn{
-    padding:12px 24px;
-    font-size:15px;
-}
-
-.bundle-card{
-    padding:32px;
-}
-
-.bundle-card .price{
-    font-size:28px;
-}
-
-
-
-/* ===============================
-   FINAL GAME SMART SIZE CONTROL
-   =============================== */
-
-html {
-    font-size: 16px;
-}
-
-body {
-    font-size: 15px;
-}
-
-/* Navigation */
-.navbar {
-    padding: 15px 30px;
-}
-
-.logo h2 {
-    font-size: 26px;
-}
-
-.logo p {
-    font-size: 12px;
-}
-
-.nav-links {
-    gap: 28px;
-}
-
-.nav-links a {
-    font-size: 14px;
-}
-
-.nav-btn {
-    padding: 10px 22px;
-    font-size: 14px;
-}
-
-/* Hero */
-.hero-left h1 {
-    font-size: 38px;
-}
-
-.hero-left p {
-    font-size: 15px;
-}
-
-/* Section headings */
-.section-title h2,
-.services-preview h2,
-.bundles h2 {
-    font-size: 30px;
-}
-
-.section-title p {
-    font-size: 14px;
-}
-
-/* Service cards */
-.service-card {
-    padding: 28px;
-    min-height: 450px;
-}
-
-.service-icon {
-    font-size: 34px;
-}
-
-.service-card h3 {
-    font-size: 18px;
-}
-
-.service-card p {
-    font-size: 14px;
-}
-
-.service-card li {
-    font-size: 13px;
-    margin: 8px 0;
-}
-
-/* Prices */
-.price {
-    font-size: 24px !important;
-    margin: 15px 0;
-}
-
-/* Buttons */
-.primary-btn,
-.secondary-btn,
-.service-btn {
-    padding: 10px 20px;
-    font-size: 14px !important;
-    border-radius: 30px;
-}
-
-.service-btn {
-    margin-top: 15px;
-}
-
-/* Bundles */
-.bundle-card {
-    padding: 30px;
-}
-
-.bundle-card h3{
-    font-size:20px;
-    line-height:1.3;
-}
-
-.bundle-card li {
-    font-size: 14px;
-}
-
-/* Mobile */
-@media(max-width:900px){
-
-.hero-left h1 {
-    font-size: 32px;
-}
-
-.section-title h2 {
-    font-size: 26px;
-}
-
-}
-
-
-
-/* =====================================
-   HARD RESET - FINAL SIZE FIX
-   ===================================== */
-
-body,
-p,
-li,
-a {
-    font-size: 14px !important;
-}
-
-.logo h2 {
-    font-size: 24px !important;
-}
-
-.logo p {
-    font-size: 11px !important;
-}
-
-.nav-links a,
-.nav-btn {
-    font-size: 13px !important;
-}
-
-.hero-left h1 {
-    font-size: 36px !important;
-    line-height: 1.15;
-}
-
-.hero-left p {
-    font-size: 14px !important;
-}
-
-.section-title h2,
-.services-preview h2,
-.bundles h2 {
-    font-size: 28px !important;
-}
-
-.service-card {
-    padding: 25px !important;
-}
-
-.service-icon {
-    font-size: 30px !important;
-}
-
-.service-card h3,
-.bundle-card h3 {
-    font-size: 18px !important;
-}
-
-.service-card p,
-.bundle-card p {
-    font-size: 13px !important;
-}
-
-.service-card li,
-.bundle-card li {
-    font-size: 12px !important;
-}
-
-.price,
-.service-card .price,
-.bundle-card .price {
-    font-size: 22px !important;
-    margin: 12px 0 !important;
-}
-
-.service-btn,
-.primary-btn,
-.secondary-btn {
-    font-size: 13px !important;
-    padding: 9px 18px !important;
-}
-
-
-
-/* ==========================================
-   GAMESMART FINAL CLEAN SIZE OVERRIDES
-   This must stay at the VERY END of CSS
-========================================== */
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-size: 15px !important;
-}
-
-/* Header */
-.logo h2 {
-    font-size: 24px !important;
-}
-
-.logo p {
-    font-size: 12px !important;
-}
-
-.nav-links a {
-    font-size: 14px !important;
-}
-
-.nav-btn {
-    padding: 10px 22px !important;
-    font-size: 14px !important;
-}
-
-/* Hero */
-.hero-left h1 {
-    font-size: 40px !important;
-    line-height: 1.15 !important;
-}
-
-.hero-left p {
-    font-size: 15px !important;
-}
-
-/* Section headings */
-.section-title h2,
-.services-preview h2,
-.bundles h2 {
-    font-size: 32px !important;
-}
-
-.section-title span {
-    font-size: 13px !important;
-}
-
-/* Cards */
-.service-card,
-.bundle-card {
-    padding: 28px !important;
-}
-
-.service-icon {
-    font-size: 32px !important;
-}
-
-.service-card h3,
-.bundle-card h3 {
-    font-size: 20px !important;
-}
-
-.service-card p,
-.bundle-card p {
-    font-size: 14px !important;
-}
-
-.service-card ul li,
-.bundle-card ul li {
-    font-size: 13px !important;
-}
-
-/* Prices */
-.price,
-.service-card .price,
-.bundle-card .price {
-    font-size: 26px !important;
-    margin: 15px 0 !important;
-}
-
-/* Buttons */
-.primary-btn,
-.secondary-btn,
-.service-btn {
-    padding: 11px 22px !important;
-    font-size: 14px !important;
-    min-height: auto !important;
-}
-
-.service-btn {
-    display: block !important;
-    width: 100% !important;
-}
-
-/* Footer */
-.footer-column h2 {
-    font-size: 24px !important;
-}
-
-.footer-column h3 {
-    font-size: 18px !important;
-}
-
-.footer-column p {
-    font-size: 14px !important;
-}
-
-
-/* Mobile */
-@media(max-width:768px){
-
-.hero-left h1 {
-    font-size:32px !important;
-}
-
-.section-title h2 {
-    font-size:26px !important;
-}
-
-.service-card h3,
-.bundle-card h3 {
-    font-size:18px !important;
-}
-
-}
-
-
-
-
-/* ==========================================
-   GAME SMART - SERVICE AREA FINAL CLEAN FIX
-   ========================================== */
-
-.service-area {
-    width: 100%;
-    padding: 90px 30px;
-    background: #f8fafc;
-}
-
-.service-area .section-title {
-    max-width: 800px;
-    margin: 0 auto 55px;
-    text-align: center;
-}
-
-.service-area .section-title span {
-    display: block;
-    color: #2563eb;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: .5px;
-    margin-bottom: 12px;
-}
-
-.service-area .section-title h2 {
-    color: #08142B;
-    font-size: 36px;
-    margin-bottom: 15px;
-}
-
-.service-area .section-title p {
-    color: #475569;
-    font-size: 16px;
-    margin: auto;
-}
-
-.area-grid {
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-}
-
-.area-card {
-    background: white;
-    min-height: 240px;
-    padding: 35px 25px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 12px 35px rgba(0,0,0,.08);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: .3s;
-}
-
-.area-card:hover {
-    transform: translateY(-8px);
-}
-
-.area-icon {
-    font-size: 42px;
-    margin-bottom: 18px;
-}
-
-.area-card h3 {
-    color: #08142B;
-    font-size: 21px;
-    margin-bottom: 12px;
-}
-
-.area-card p {
-    color: #475569;
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 0;
+    font-size:25px;
 }
 
 @media(max-width:1000px){
-    .area-grid {
-        grid-template-columns: repeat(2,1fr);
+    .hero,
+    .about-grid,
+    .service-grid,
+    .bundle-grid,
+    .steps,
+    .why-grid,
+    .area-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .nav-links{
+        display:none;
     }
 }
 
-@media(max-width:600px){
-    .area-grid {
-        grid-template-columns: 1fr;
-    }
-}
