@@ -347,3 +347,85 @@ header{
     }
 }
 
+
+
+/* ==========================================
+   Pretoria Section - Isolated Final Version
+========================================== */
+
+.pretoria-section{
+    padding:90px 30px;
+    background:#f8fafc;
+    text-align:center;
+}
+
+.pretoria-container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.pretoria-label{
+    color:#2563eb;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.pretoria-container h2{
+    color:#08142B;
+    font-size:36px;
+    margin:15px 0;
+}
+
+.pretoria-intro{
+    color:#475569;
+    max-width:650px;
+    margin:0 auto 50px;
+}
+
+.pretoria-cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.pretoria-card{
+    background:white;
+    padding:35px 25px;
+    border-radius:20px;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    min-height:230px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.pretoria-icon{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.pretoria-card h3{
+    color:#08142B;
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.pretoria-card p{
+    color:#475569;
+    font-size:14px;
+    line-height:1.6;
+}
+
+@media(max-width:1000px){
+    .pretoria-cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .pretoria-cards{
+        grid-template-columns:1fr;
+    }
+}
