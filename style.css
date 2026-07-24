@@ -1551,3 +1551,70 @@ body {
         grid-template-columns:1fr;
     }
 }
+
+
+/* =========================================
+   GameSmart Final Service Area Repair
+========================================= */
+
+.service-area {
+    padding: 90px 30px !important;
+    background: #f8fafc !important;
+}
+
+.service-area .section-title {
+    text-align: center !important;
+    max-width: 800px !important;
+    margin: 0 auto 50px !important;
+}
+
+.area-grid {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 25px !important;
+}
+
+.area-card {
+    background: #ffffff !important;
+    padding: 35px 25px !important;
+    border-radius: 20px !important;
+    text-align: center !important;
+    box-shadow: 0 12px 35px rgba(0,0,0,.08) !important;
+    transition: .3s !important;
+    min-height: 220px !important;
+}
+
+.area-card:hover {
+    transform: translateY(-8px) !important;
+}
+
+.area-icon {
+    font-size: 40px !important;
+    margin-bottom: 18px !important;
+}
+
+.area-card h3 {
+    color: #08142B !important;
+    font-size: 22px !important;
+    margin-bottom: 12px !important;
+}
+
+.area-card p {
+    color: #475569 !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+}
+
+@media(max-width:1000px){
+    .area-grid {
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+}
+
+@media(max-width:600px){
+    .area-grid {
+        grid-template-columns:1fr !important;
+    }
+}
