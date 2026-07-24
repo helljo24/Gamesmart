@@ -1,431 +1,207 @@
 
 /* ==========================================
-   GameSmart Clean Style.css
-   Rebuilt version
+   GameSmart Final Polish Fix
+   Restores Services, CTA and Footer Styling
 ========================================== */
 
-:root{
-    --primary:#2563eb;
-    --primary-dark:#1d4ed8;
-    --dark:#08142B;
-    --light:#f8fafc;
-    --text:#475569;
-    --white:#ffffff;
-    --shadow:0 12px 35px rgba(0,0,0,.08);
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-    color:#1e293b;
-    background:white;
-    line-height:1.6;
-}
-
-img{
-    max-width:100%;
-}
-
-header{
-    background:var(--dark);
-    position:sticky;
-    top:0;
-    z-index:1000;
-}
-
-.navbar{
-    max-width:1200px;
-    margin:auto;
-    padding:15px 30px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:20px;
-}
-
-.logo h2{
-    color:white;
-    font-size:26px;
-}
-
-.logo p{
-    color:#cbd5e1;
-    font-size:12px;
-}
-
-.nav-links{
-    display:flex;
-    list-style:none;
-    gap:28px;
-}
-
-.nav-links a{
-    color:white;
-    text-decoration:none;
-    font-size:14px;
-}
-
-.nav-btn,
-.primary-btn,
-.secondary-btn,
-.service-btn{
-    display:inline-block;
-    text-decoration:none;
-    border-radius:40px;
-    padding:11px 22px;
-    font-size:14px;
-    font-weight:600;
-    transition:.3s;
-}
-
-.nav-btn,
-.primary-btn,
-.service-btn{
-    background:var(--primary);
-    color:white;
-}
-
-.secondary-btn{
-    border:2px solid var(--primary);
-    color:var(--primary);
-}
-
-.primary-btn:hover,
-.nav-btn:hover,
-.service-btn:hover{
-    background:var(--primary-dark);
-}
-
-.hero{
-    max-width:1200px;
-    margin:auto;
-    padding:70px 30px;
-    display:flex;
-    align-items:center;
-    gap:60px;
-}
-
-.hero-left,
-.hero-right{
-    flex:1;
-}
-
-.badge{
-    display:inline-block;
-    background:#eff6ff;
-    color:var(--primary);
-    padding:8px 18px;
-    border-radius:30px;
-    font-size:13px;
-    margin-bottom:20px;
-}
-
-.hero h1{
-    font-size:40px;
-    line-height:1.15;
-    color:var(--dark);
-}
-
-.hero p{
-    margin:25px 0;
-    color:var(--text);
-    font-size:15px;
-}
-
-.hero-buttons{
-    display:flex;
-    gap:15px;
-}
-
-.hero-stats{
-    display:flex;
-    gap:35px;
-    margin-top:35px;
-}
-
-.hero-stats h3{
-    color:var(--dark);
-}
-
-.about,
-.services,
-.service-area,
-.how-it-works,
-.why,
-.faq,
-.booking{
-    padding:80px 30px;
-}
-
-.about-container,
+/* Section titles */
 .section-title{
-    max-width:800px;
-    margin:auto;
     text-align:center;
+    max-width:750px;
+    margin:0 auto 55px;
 }
 
 .section-title span{
-    color:var(--primary);
-    font-size:13px;
-    font-weight:700;
-}
-
-.section-title h2{
-    color:var(--dark);
-    font-size:32px;
-    margin:10px 0;
-}
-
-.section-title p{
-    color:var(--text);
-}
-
-.about-grid,
-.service-grid,
-.bundle-grid,
-.steps,
-.why-grid,
-.area-grid{
-    max-width:1200px;
-    margin:50px auto 0;
-    display:grid;
-    gap:25px;
-}
-
-.about-grid{
-    grid-template-columns:repeat(3,1fr);
-}
-
-.service-grid{
-    grid-template-columns:repeat(3,1fr);
-}
-
-.service-card,
-.bundle-card,
-.step,
-.why-card,
-.faq-item,
-.area-card{
-    background:white;
-    border-radius:20px;
-    padding:30px;
-    box-shadow:var(--shadow);
-}
-
-.service-card{
-    min-height:450px;
-    text-align:center;
-}
-
-.service-icon,
-.area-icon{
-    font-size:35px;
-}
-
-.service-card h3,
-.bundle-card h3,
-.area-card h3{
-    color:var(--dark);
-    font-size:20px;
-    margin:15px 0;
-}
-
-.service-card p,
-.bundle-card p,
-.area-card p{
-    color:var(--text);
-    font-size:14px;
-}
-
-.service-card ul,
-.bundle-card ul{
-    text-align:left;
-    margin:20px 0;
-    padding-left:20px;
-}
-
-.price{
-    color:var(--primary);
-    font-size:26px;
-    font-weight:700;
-    margin:15px 0;
-}
-
-.bundles{
-    background:var(--dark);
-    padding:80px 30px;
-}
-
-.bundle-grid{
-    grid-template-columns:repeat(3,1fr);
-}
-
-.bundle-card{
-    position:relative;
-}
-
-.featured{
-    border:3px solid var(--primary);
-}
-
-.popular{
-    position:absolute;
-    top:-15px;
-    left:50%;
-    transform:translateX(-50%);
-    background:var(--primary);
-    color:white;
-    padding:7px 20px;
-    border-radius:30px;
-    font-size:12px;
-}
-
-.area-grid{
-    grid-template-columns:repeat(4,1fr);
-}
-
-.area-card{
-    text-align:center;
-    min-height:220px;
-}
-
-.booking{
-    background:linear-gradient(135deg,#2563eb,#1d4ed8);
-    color:white;
-    text-align:center;
-}
-
-.footer{
-    background:var(--dark);
-    color:white;
-    padding:60px 30px;
-}
-
-.floating-whatsapp{
-    position:fixed;
-    right:25px;
-    bottom:25px;
-    width:55px;
-    height:55px;
-    border-radius:50%;
-    background:#25D366;
-    color:white;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-decoration:none;
-    font-size:25px;
-}
-
-@media(max-width:1000px){
-    .hero,
-    .about-grid,
-    .service-grid,
-    .bundle-grid,
-    .steps,
-    .why-grid,
-    .area-grid{
-        grid-template-columns:1fr;
-    }
-
-    .hero{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    .nav-links{
-        display:none;
-    }
-}
-
-
-
-/* ==========================================
-   Pretoria Section - Isolated Final Version
-========================================== */
-
-.pretoria-section{
-    padding:90px 30px;
-    background:#f8fafc;
-    text-align:center;
-}
-
-.pretoria-container{
-    max-width:1200px;
-    margin:auto;
-}
-
-.pretoria-label{
     color:#2563eb;
     font-size:13px;
     font-weight:700;
     letter-spacing:1px;
 }
 
-.pretoria-container h2{
+.section-title h2{
     color:#08142B;
-    font-size:36px;
+    font-size:42px;
     margin:15px 0;
 }
 
-.pretoria-intro{
+.section-title p{
     color:#475569;
-    max-width:650px;
-    margin:0 auto 50px;
+    font-size:17px;
 }
 
-.pretoria-cards{
+
+/* Professional Services */
+.services{
+    padding:100px 30px;
+    background:#f8fafc;
+}
+
+.service-grid{
+    max-width:1200px;
+    margin:auto;
     display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
 }
 
-.pretoria-card{
+.service-card{
     background:white;
-    padding:35px 25px;
+    padding:35px;
     border-radius:20px;
     box-shadow:0 12px 35px rgba(0,0,0,.08);
-    min-height:230px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+    text-align:center;
+    transition:.3s;
 }
 
-.pretoria-icon{
-    font-size:42px;
+.service-card:hover{
+    transform:translateY(-8px);
+}
+
+.service-icon{
+    font-size:35px;
     margin-bottom:15px;
 }
 
-.pretoria-card h3{
+.service-card h3{
     color:#08142B;
-    font-size:20px;
-    margin-bottom:10px;
+    font-size:22px;
+    margin-bottom:15px;
 }
 
-.pretoria-card p{
+.service-card p{
     color:#475569;
-    font-size:14px;
-    line-height:1.6;
+    margin-bottom:20px;
 }
 
-@media(max-width:1000px){
-    .pretoria-cards{
-        grid-template-columns:repeat(2,1fr);
-    }
+.service-card ul{
+    text-align:left;
+    margin:20px 0;
+    padding-left:20px;
+    color:#334155;
 }
 
-@media(max-width:600px){
-    .pretoria-cards{
-        grid-template-columns:1fr;
-    }
+.service-card li{
+    margin:10px 0;
+}
+
+.price{
+    color:#2563eb;
+    font-size:36px;
+    font-weight:700;
+    margin:20px 0;
+}
+
+.service-btn{
+    display:block;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.service-btn:hover{
+    background:#1d4ed8;
+}
+
+
+/* CTA */
+.booking,
+.cta{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    padding:100px 30px;
+    text-align:center;
+    color:white;
+}
+
+.booking h2,
+.cta h2{
+    color:white;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.booking p,
+.cta p{
+    color:white;
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+.booking .primary-btn,
+.cta .primary-btn{
+    background:white;
+    color:#2563eb;
+    padding:15px 35px;
+    border-radius:50px;
+}
+
+
+/* Footer */
+.footer,
+footer{
+    background:#08142B;
+    color:white;
+    padding:70px 30px 30px;
+    text-align:center;
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.footer h2,
+.footer h3{
+    color:white;
+    margin-bottom:15px;
+}
+
+.footer p{
+    color:#cbd5e1;
+    line-height:1.7;
+}
+
+.footer ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer a{
+    color:#cbd5e1;
+    text-decoration:none;
+}
+
+.footer-bottom{
+    margin-top:40px;
+    border-top:1px solid rgba(255,255,255,.15);
+    padding-top:20px;
+}
+
+
+/* Responsive */
+@media(max-width:900px){
+
+.service-grid{
+    grid-template-columns:1fr;
+}
+
+.footer-container{
+    grid-template-columns:1fr;
+}
+
+.section-title h2{
+    font-size:34px;
+}
+
+.booking h2,
+.cta h2{
+    font-size:34px;
+}
+
 }
