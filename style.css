@@ -1618,3 +1618,93 @@ body {
         grid-template-columns:1fr !important;
     }
 }
+
+
+/* ==========================================
+   GAME SMART SERVICE AREA FINAL OVERRIDE
+   ========================================== */
+
+.service-area{
+    width:100%;
+    padding:90px 30px !important;
+    background:#f8fafc !important;
+}
+
+.service-area .section-title{
+    display:block !important;
+    text-align:center !important;
+    margin:0 auto 50px !important;
+}
+
+.service-area .section-title span{
+    display:block !important;
+    color:#2563eb !important;
+    font-size:13px !important;
+    font-weight:700 !important;
+    margin-bottom:10px !important;
+}
+
+.service-area .section-title h2{
+    font-size:36px !important;
+    margin-bottom:15px !important;
+}
+
+.service-area .section-title p{
+    max-width:650px !important;
+    margin:0 auto !important;
+}
+
+.service-area .area-grid{
+    width:100% !important;
+    max-width:1200px !important;
+    margin:auto !important;
+    display:grid !important;
+    grid-template-columns:repeat(4,1fr) !important;
+    gap:25px !important;
+}
+
+.service-area .area-card{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:center !important;
+    background:#ffffff !important;
+    padding:35px 25px !important;
+    min-height:230px !important;
+    border-radius:20px !important;
+    text-align:center !important;
+    box-shadow:0 12px 35px rgba(0,0,0,.08) !important;
+}
+
+.service-area .area-icon{
+    display:block !important;
+    font-size:42px !important;
+    margin-bottom:15px !important;
+}
+
+.service-area .area-card h3{
+    display:block !important;
+    font-size:21px !important;
+    color:#08142B !important;
+    margin:10px 0 !important;
+}
+
+.service-area .area-card p{
+    display:block !important;
+    font-size:14px !important;
+    color:#475569 !important;
+    line-height:1.6 !important;
+    margin:0 !important;
+}
+
+@media(max-width:1000px){
+    .service-area .area-grid{
+        grid-template-columns:repeat(2,1fr) !important;
+    }
+}
+
+@media(max-width:600px){
+    .service-area .area-grid{
+        grid-template-columns:1fr !important;
+    }
+}
